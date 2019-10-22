@@ -3,7 +3,6 @@ from os import system
 import time
 import sys
 sys.stdout.write("\x1b[8;{rows};{cols}t".format(rows=24, cols=71))
-#sp.Popen("resize -s 24 71", stdin=sp.PIPE, stdout=sp.PIPE, stderr=sp.PIPE, shell=True)
 system('clear')
 # terminal colors
 RED = "\033[1;31m"  
