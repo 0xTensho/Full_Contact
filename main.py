@@ -28,7 +28,7 @@ print(''':   _____ _   _ _     _        ____ ___  _   _ _____  _    ____ _____ :
 print("{R}:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::{N}".format(R=RED, N=NORMAL, B=BOLD))
 print("{N}:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::{N}".format(R=RED, N=NORMAL, B=BOLD))
 print("{R}:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::{N}".format(R=RED, N=NORMAL, B=BOLD))
-print("{R}[{G}+{R}]{G} Version 1.0.1".format(R=RED, G=GREEN, N=NORMAL))
+print("{R}[{G}+{R}]{G} Version 1.0.2".format(R=RED, G=GREEN, N=NORMAL))
 print("{R}[{G}+{R}]{G} Developped by T3nsh0".format(R=RED, G=GREEN, N=NORMAL))
 print("{R}[{G}!{R}]{G} Don't upload online !".format(R=RED, G=GREEN, N=NORMAL))
 print("\n{R}[ {HY}MAIN PAYLOAD CREATOR{B}{R} ]".format(N=NORMAL, R=RED, HY=HYELLOW, B=BASIC))
